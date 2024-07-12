@@ -9,13 +9,13 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     ####### DATA INPUT ##########
-    urdf_file = 'box_bot_geometric_meshes.urdf'
-    #xacro_file = "urdfbot.xacro"
-    package_description = "box_bot_description"
+    urdf_file = 'box_bot_geometric.urdf'
+    #xacro_file = 'urdfbot.xacro'
+    package_description = 'box_bot_description'
 
     ####### DATA INPUT END ##########
-    print("Fetching URDF ==>")
-    robot_desc_path = os.path.join(get_package_share_directory(package_description), "urdf", urdf_file)
+    print('Fetching URDF ==>')
+    robot_desc_path = os.path.join(get_package_share_directory(package_description), 'urdf', urdf_file)
 
     # Robot State Publisher
 
