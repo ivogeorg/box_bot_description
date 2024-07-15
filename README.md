@@ -19,7 +19,7 @@ These repos go together. [`box_bot_gazebo`](https://github.com/ivogeorg/box_bot_
 
 ##### Starting Rviz2 and `joint_state_publisher_gui`
 
-1. Expected `rviz/urdf_vis.rviz` config file.
+1. Expected [`rviz/urdf_vis.rviz`](rviz/urdf_vis.rviz) config file.
 2. In a terminal:
    1. `cd ~/ros2_ws`
    2. `colcon build --packages-select box_bot_description`
