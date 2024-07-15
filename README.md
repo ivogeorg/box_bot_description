@@ -17,6 +17,19 @@ These repos go together. [`box_bot_gazebo`](https://github.com/ivogeorg/box_bot_
 
 #### Rviz2
 
+##### Starting Rviz2 and `joint_state_publisher_gui`
+
+1. Expected `rviz/urdf_vis.rviz` config file.
+2. In a terminal:
+   1. `cd ~/ros2_ws`
+   2. `colcon build --packages-select box_bot_description`
+   3. `source install/setup.bash`
+   4. `ros2 launch box_bot_description urdf_visualize_geometric.launch.py`
+3. In another terminal:
+   1. `cd ~/ros2_ws`
+   2. `source install/setup.bash`
+   3. `ros2 launch joint_state_publisher_gui joint_state_publisher_gui`
+
 ##### 1. Geometric
 ![Geometric bot](assets/box_bot_geometric.png)  
 
