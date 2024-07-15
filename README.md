@@ -1,6 +1,6 @@
-### box_bot_description
+### `box_bot_description`
 
-#### box_bot_gazebo
+#### `box_bot_gazebo`
 
 These repos go together. [`box_bot_gazebo`](https://github.com/ivogeorg/box_bot_gazebo) uses this package to populate the robot in Gazebo.
 
