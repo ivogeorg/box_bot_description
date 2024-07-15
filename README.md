@@ -1,5 +1,9 @@
 ### box_bot_description
 
+#### box_bot_gazebo
+
+These repos go together. [`box_bot_gazebo`](https://github.com/ivogeorg/box_bot_gazebo) uses this package to populate the robot in Gazebo.
+
 #### Notes
 1. The wheels are rotated in the link, not the joint.
 2. Each wheel is rotated around two axes to avoid the differential drive moving the robot opposite the sign of the linear velocity component.
