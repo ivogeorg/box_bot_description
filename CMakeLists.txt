@@ -27,6 +27,7 @@ install(
 		rviz
 		launch
 		meshes
+		config
 	DESTINATION
 		share/${PROJECT_NAME}/
 )
