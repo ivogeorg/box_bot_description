@@ -38,13 +38,13 @@ These repos go together. [`box_bot_gazebo`](https://github.com/ivogeorg/box_bot_
 
 #### Laser sensor link and joint tree
 
-| Rviz1 | `rqt_tf_tree` |
+| Rviz2 | `rqt_tf_tree` |
 | --- | --- |
 | ![Laser sensor subtree (Rviz2)](assets/laser_sensor_subtree_rviz2.png) | ![Laser sensor subtree (rqt_tf_tree)](assets/laser_sensor_subtree_rqt_tf_tree.png) |
 
-1. The laser sensor link and joint tree branches off the `chassis` link with a _prismatic_ joint, which moves up and down the z-axis and holds the rest of the subtree.
+1. The laser sensor link-and-joint subtree branches off the `chassis` link with a _prismatic_ joint, which moves up and down the z-axis and holds the rest of the subtree.
 2. The `laser_scan_link` is a parent of two joints:
-   1. The _fixed_ joint connects the `laser_scan_frame` link to it, and is used to attach the ROS ray sensor plugin, which implements the laser sensor simulation and visualization.
-   2. The _continuous_ joint connects the laser sensor housing to it (eggregiously misnamed `laser_scan_model_link`), and it can rotate around the z-axis at a given velocity.
+   1. The _fixed_ joint connects the `laser_scan_frame` link to it, and is used to attach the ROS ray sensor plugin, which implements the laser sensor simulation and visualization. Being attached so, the laser scanner can be moved up and down as well.  
+   2. The _continuous_ joint connects the laser sensor housing to it (rather generically named `laser_scan_model_link`), and it can rotate around the z-axis at a given velocity.
    3. **Note:** There is no connection between the rotation of the housing and that of the rays of the plugin. These are completely separate simulations.
 
