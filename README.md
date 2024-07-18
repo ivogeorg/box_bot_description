@@ -45,5 +45,6 @@ These repos go together. [`box_bot_gazebo`](https://github.com/ivogeorg/box_bot_
 1. The laser sensor link and joint tree branches off the `chassis` link with a _prismatic_ joint, which moves up and down the z-axis and holds the rest of the subtree.
 2. The `laser_scan_link` is a parent of two joints:
    1. The _fixed_ joint connects the `laser_scan_frame` link to it, and is used to attach the ROS ray sensor plugin, which implements the laser sensor simulation and visualization.
-   1. The _continuous_ joint connects the laser sensor housing to it, and it can rotate around the z-axis at a given velocity.
+   2. The _continuous_ joint connects the laser sensor housing to it (eggregiously misnamed `laser_scan_model_link`), and it can rotate around the z-axis at a given velocity.
+   3. **Note:** There is no connection between the rotation of the housing and that of the rays of the plugin. These are completely separate simulations.
 
