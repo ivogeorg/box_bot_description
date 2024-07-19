@@ -80,12 +80,12 @@ user:~$ ros2 topic list
 /tf
 /tf_static
 user:~$
-```
+```  
 
-In one terminal:
+In one terminal:  
 `ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/robot1/cmd_vel`  
 
-In another:
+In another:  
 `ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/robot2/cmd_vel`  
 
 
