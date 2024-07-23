@@ -88,4 +88,8 @@ In one terminal:
 In another:  
 `ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/robot2/cmd_vel`  
 
+#### Discrepancy in laser ray contact positions
 
+| Gazebo | Rviz2 |
+| --- | --- |
+| ![Laser rays in Gazebo](assets/laser_position_gazebo.png) | ![Laser rays in Rviz2](assets/laser_position_rviz2.png) |
