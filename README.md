@@ -15,6 +15,10 @@ These repos go together. [`box_bot_gazebo`](https://github.com/ivogeorg/box_bot_
 
 ![Box bot frame diagram](assets/box_bot_frames_wheels_and_casters.png)  
 
+##### Final frames
+
+![Box bot final frame diagram](assets/box_bot_frames_final.png)  
+
 #### Rviz2
 
 ##### Starting Rviz2 and `joint_state_publisher_gui`
